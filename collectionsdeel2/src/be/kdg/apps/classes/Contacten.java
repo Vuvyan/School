@@ -2,7 +2,7 @@ package be.kdg.apps.classes;
 
 import java.util.*;
 
-public class Contacten {
+public class Contacten implements App{
     Scanner scanner = new Scanner(System.in);
     //private List<String> namen = new ArrayList<>();
     //private List<String> telefoonnummers = new ArrayList<>();
@@ -31,5 +31,10 @@ public class Contacten {
             //System.out.println(naam + " zit niet in mijn contacten...");
        // }
 
+    }
+
+    @Override
+    public String getName() {
+        return "Contacten";
     }
 }

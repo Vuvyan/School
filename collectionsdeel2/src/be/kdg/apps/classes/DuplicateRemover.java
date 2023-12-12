@@ -3,7 +3,7 @@ package be.kdg.apps.classes;
 import java.util.*;
 
 //Hier gebruikt men een LinkedList
-public class DuplicateRemover {
+public class DuplicateRemover  implements App{
     public void run(){
         String woord;
         Scanner scanner = new Scanner(System.in);
@@ -25,5 +25,10 @@ public class DuplicateRemover {
             System.out.println(w);
         }
 
+    }
+
+    @Override
+    public String getName() {
+        return "Duplicate Remover";
     }
 }

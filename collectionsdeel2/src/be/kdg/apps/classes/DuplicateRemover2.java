@@ -7,7 +7,7 @@ import java.util.Set;
 //Hier gebruikt men in plaats van een linkedlist een HashSet
 //een nadeel hier is wel dat een hashset uw volgorde niet bijhoudt zoals je het intypt
 // als je toch de volgorde wilt bijhouden gebruik je een LinkedHashSet
-public class DuplicateRemover2 {
+public class DuplicateRemover2  implements App{
     public void run() {
             String woord;
             Scanner scanner = new Scanner(System.in);
@@ -29,5 +29,13 @@ public class DuplicateRemover2 {
             }
 
         }
+
+    @Override
+    public String getName() {
+        return "Duplicate Remover 2";
     }
+
+    }
+
+
 
