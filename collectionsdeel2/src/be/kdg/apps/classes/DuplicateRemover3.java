@@ -7,7 +7,7 @@ import java.util.Set;
 
 //Dit is de versie met de LinkedHashSet
 
-public class DuplicateRemover3 {
+public class DuplicateRemover3  implements App {
     public void run() {
         String woord;
         Scanner scanner = new Scanner(System.in);
@@ -29,4 +29,9 @@ public class DuplicateRemover3 {
         }
 
     }
+    @Override
+    public String getName() {
+        return "Duplicate Remover 3";
+    }
+
 }
