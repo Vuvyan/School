@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class DuplicateRemover4 {
+public class DuplicateRemover4  implements App {
     //Dit is de versie met een TreeSet
     //Volgorde is verandert -> alfabetisch verandert
     public void run() {
@@ -28,5 +28,10 @@ public class DuplicateRemover4 {
             System.out.println(w);
         }
 
+    }
+
+    @Override
+    public String getName() {
+        return "Duplicate Remover 4";
     }
 }
